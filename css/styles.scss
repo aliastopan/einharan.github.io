@@ -1,0 +1,27 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+body{
+    padding: 1rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+._bg-dark{
+    background: #0d0f17;
+}
+
+._text-light{
+    color: #e0e0e0;
+}
+
+._container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
