@@ -1,3 +1,7 @@
+:root {
+  --picture-size: 100px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,29 +9,97 @@
 }
 
 body {
-  padding: 1rem;
-  font-family: 'Montserrat';
-  font-weight: 600;
+  font-family: 'Exo 2','Montserrat';
+  font-weight: 500;
+  background-color: #16141b;
+  color: white;
 }
 
-._bg-dark {
-  background: #0d0f17;
+.containter {
+  padding: 0.5rem;
 }
 
-._text-light {
-  color: #e0e0e0;
-}
-
-._container {
-  height: 100vh;
+.page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+}
+
+.base {
+  padding: 0.5rem;
+  width: 50%;
+  border-right: 1px solid grey;
+}
+
+.photo {
+  margin-right: 0.5rem;
+  height: var(--picture-size);
+  width: var(--picture-size);
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.identity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.alias {
+  font-weight: 700;
+  font-size: 2.25rem;
+  font-style: italic;
+}
+
+.properties {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.level {
+  font-weight: 500;
+  font-size: 2.65rem;
+}
+
+.class {
+  margin: 0.5rem;
+  font-family: 'Montserrat';
+}
+
+.class-detail {
+  color: grey;
+  font-weight: 300;
+  font-family: 'Montserrat';
+}
+
+.specs {
+  padding: 0.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
