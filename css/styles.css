@@ -1,5 +1,9 @@
 :root {
   --picture-size: 100px;
+  --grey-color: rgb(112, 112, 112);
+  --gradient: linear-gradient(90deg, rgba(24,24,24,1) 0%, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 65%, rgba(24,24,24,1) 100%)
+
+;
 }
 
 * {
@@ -11,8 +15,12 @@
 body {
   font-family: 'Exo 2','Montserrat';
   font-weight: 500;
-  background-color: #16141b;
-  color: white;
+  background-color: #181818;
+  color: whitesmoke;
+}
+
+ul {
+  list-style: none;
 }
 
 .containter {
@@ -57,6 +65,8 @@ body {
           flex-direction: row;
 }
 
+
+
 .identity {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,8 +94,9 @@ body {
 }
 
 .level {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2.65rem;
+  color: var(--grey-color);
 }
 
 .class {
@@ -94,12 +105,45 @@ body {
 }
 
 .class-detail {
-  color: grey;
+  color: var(--grey-color);
   font-weight: 300;
   font-family: 'Montserrat';
 }
 
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  background-color: #353535;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  width: 13%;
+  background-color: #fa115f;
+}
+
 .specs {
   padding: 0.5rem;
+}
+
+.bodyframe {
+  overflow: hidden;
+  height: 350px;
+  width: 300px;
+  border-width: 1px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  -o-border-image: var(--gradient) 1;
+     border-image: var(--gradient) 1;
 }
 /*# sourceMappingURL=styles.css.map */

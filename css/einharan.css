@@ -1,0 +1,86 @@
+:root {
+    --picture-size: 100px;
+    --grey-color: rgb(112, 112, 112);
+    --gradient: linear-gradient(90deg, rgba(24,24,24,1) 0%, rgba(255,255,255,1) 5%, rgba(255,255,255,1)  100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Exo 2','Montserrat';
+    font-weight: 500;
+    background-color: #181818;
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+}
+
+.page{
+    display: flex;
+
+}
+
+.containter{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* margin-left: 0;
+    margin-right: 5rem; */
+}
+
+.bodyframe{
+    overflow: hidden;
+    height: 500px;
+    /* width: 235px; */
+    border-width: 1px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-image: var(--gradient) 1;
+}
+
+.identity{
+    display: flex;
+    flex-direction: column;
+}
+
+.properties{
+    display: flex;
+    flex-direction: row;
+}
+
+.alias {
+    font-weight: 700;
+    font-size: 3.5rem;
+    font-style: italic;
+}
+
+.level{
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--grey-color);
+
+}
+
+.class{
+    margin: 0.5rem;
+    font-weight: 400;
+    font-family: 'Montserrat';
+}
+.class ul > li > span{
+    font-size: 1.125rem;
+}
+
+.class-detail{
+    color: var(--grey-color);
+    font-weight: 300;
+}

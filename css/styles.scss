@@ -1,5 +1,9 @@
 :root{
     --picture-size: 100px;
+    --grey-color: rgb(112, 112, 112);
+    --gradient: linear-gradient(90deg, rgba(24,24,24,1) 0%, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 65%, rgba(24,24,24,1) 100%)
+    --gradient-end: linear-gradient(90deg, rgba(24,24,24,1) 0%, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 100%);
+
 }
 
 * {
@@ -11,14 +15,27 @@
 body{
     font-family: 'Exo 2','Montserrat';
     font-weight: 500;
-    background-color: rgb(22, 20, 27);
-    color: white;
+    background-color: rgb(24, 24, 24);
+    color: rgb(245, 245, 245);
 }
+
+ul{
+    list-style: none;
+}
+
+// progress[value]::-webkit-progress-bar {
+//     background-color: #ededed;
+//     border-radius: 40px;
+//   }
+
+// progress[value]::-webkit-progress-value {
+//     border-radius: 40px;
+//     background-color:rgb(24, 176, 226);
+//   }
 
 .containter{
     padding: 0.5rem;
 }
-
 
 .page{
     display: flex;
@@ -57,9 +74,7 @@ body{
 .alias{
     font-weight: 700;
     font-size: 2.25rem;
-    // font-family: 'Cascadia Code';
     font-style: italic;
-    // letter-spacing: 1px;
 }
 
 
@@ -69,23 +84,59 @@ body{
 }
 
 .level{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 2.65rem;
+    color: var(--grey-color);
 
 }
 
 .class{
     margin: 0.5rem;
     font-family: 'Montserrat';
-
 }
+
 .class-detail{
-    color: grey;
+    color: var(--grey-color);
     font-weight: 300;
     font-family: 'Montserrat';
 }
 
+.progress-bar{
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    background-color: #353535;
+
+    
+    .progress{
+        height: 100%;
+        width: 13%;
+        background-color: #fa115f;
+    }
+}
+
+
+
 .specs{
     padding: 0.5rem;
     // background-color: grey;
+}
+
+.bodyframe{
+    overflow: hidden;
+    height: 350px;
+    width: 300px;
+    border-width: 1px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-image: var(--gradient-end) 1 ;
 }
