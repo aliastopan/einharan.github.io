@@ -1,7 +1,8 @@
 :root {
     --picture-size: 100px;
     --grey-color: rgb(112, 112, 112);
-    --gradient: linear-gradient(90deg, rgba(24,24,24,1) 0%, rgba(255,255,255,1) 5%, rgba(255,255,255,1)  100%);
+    --gradient: linear-gradient(90deg, rgba(24,24,24,1) 0%, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 65%, rgba(24,24,24,1) 100%)
+    /* --gradient: linear-gradient(90deg, rgba(24,24,24,1) 0%, rgba(255,255,255,1) 5%, rgba(255,255,255,1)  100%); */
 }
 
 * {
@@ -26,7 +27,7 @@ ul {
 
 }
 
-.containter{
+.body-container{
     padding: 0.5rem;
     display: flex;
     align-items: center;
@@ -34,6 +35,10 @@ ul {
     height: 100vh;
     /* margin-left: 0;
     margin-right: 5rem; */
+}
+
+.container{
+    padding: 0.5rem;
 }
 
 .bodyframe{
@@ -118,4 +123,61 @@ ul {
 
 .exp-label{
     font-size: 0.85rem;
+}
+
+.skill-tree{
+    padding-top: 1.5rem;
+}
+.skill-tree-branch{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box{
+    font-family: 'Montserrat';
+
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 125px;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.box svg{
+    padding: 0.5rem;
+    transform: scale(3);
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+}
+
+.box-content{
+    font-size: 1.65rem;
+    font-weight: 600;
+}
+
+.box-hispter{
+    background-color: rgb(0, 140, 255);
+    color: rgb(13, 70, 117);
+}
+
+.box-hacker{
+    background-color: rgb(236, 40, 72);
+    color: rgb(122, 20, 37);
+
+}
+
+.box-hustler{
+    background-color: rgb(244, 247, 40);
+    color: rgb(131, 133, 31);
+
 }
