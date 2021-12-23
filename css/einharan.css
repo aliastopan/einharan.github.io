@@ -14,7 +14,7 @@
 body {
     font-family: 'Exo 2','Montserrat';
     font-weight: 500;
-    background-color: #181818;
+    background-color: #181a20;
     color: whitesmoke;
 }
 
@@ -128,10 +128,21 @@ ul {
 .skill-tree{
     padding-top: 1.5rem;
 }
+
+.skill-tree-label{
+    font-weight: 300;
+    font-family: 'Montserrat';
+    font-style: italic;
+}
+
 .skill-tree-branch{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.skill-percentage{
+    font-weight: 600;
 }
 
 .box{
